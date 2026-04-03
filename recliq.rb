@@ -10,16 +10,16 @@ class Recliq < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sareepattamannil/recliq/releases/download/v0.1.0/recliq_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a4a7e761b946549980440401afa627f68dcc44e673d472620accfe7e15127b28"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_darwin_amd64.tar.gz"
+      sha256 "37cd660fd56fccc45adb644353f0ff02feb7a00a880805022e3ce43096a3ecfe"
 
       define_method(:install) do
         bin.install "recliq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sareepattamannil/recliq/releases/download/v0.1.0/recliq_0.1.0_darwin_arm64.tar.gz"
-      sha256 "77f3d90bff6510b6667807c3a1538430a555e4f5a5047d7e5c0a85d46e1aa090"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_darwin_arm64.tar.gz"
+      sha256 "6d7e29e38a699dbde759e067a183e58550c2f1fb049036927017f6798ec1c54d"
 
       define_method(:install) do
         bin.install "recliq"
@@ -29,15 +29,15 @@ class Recliq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sareepattamannil/recliq/releases/download/v0.1.0/recliq_0.1.0_linux_amd64.tar.gz"
-      sha256 "ce44ad3ec77cf9c83d6801bdcfdadd7908ade1d00d192b79b739720c330f874b"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_linux_amd64.tar.gz"
+      sha256 "80850ddf6263d9273a38ebdd3c31339fd1366a8e0d7c17dd0e6b3b60d73db30e"
       define_method(:install) do
         bin.install "recliq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sareepattamannil/recliq/releases/download/v0.1.0/recliq_0.1.0_linux_arm64.tar.gz"
-      sha256 "860d7b103eb0e066c9315ea3d82d3f98a1954446450c8f36195e070219769341"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_linux_arm64.tar.gz"
+      sha256 "8c4e568d7fc7d9f7e5bd0ccf3887a3ce860d16bd558b1ad842b690fc30888131"
       define_method(:install) do
         bin.install "recliq"
       end
