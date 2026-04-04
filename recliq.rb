@@ -11,7 +11,7 @@ class Recliq < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_darwin_amd64.tar.gz"
-      sha256 "37cd660fd56fccc45adb644353f0ff02feb7a00a880805022e3ce43096a3ecfe"
+      sha256 "e2a1fe13a6333c235be562524985f1abfc7773b6f98b04e3b6c9241beb2cf4da"
 
       define_method(:install) do
         bin.install "recliq"
@@ -19,7 +19,7 @@ class Recliq < Formula
     end
     if Hardware::CPU.arm?
       url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6d7e29e38a699dbde759e067a183e58550c2f1fb049036927017f6798ec1c54d"
+      sha256 "e79e1058e4068f90d4a55502b834215581d280570af3a1ceb84944fd22066597"
 
       define_method(:install) do
         bin.install "recliq"
@@ -30,14 +30,14 @@ class Recliq < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_linux_amd64.tar.gz"
-      sha256 "80850ddf6263d9273a38ebdd3c31339fd1366a8e0d7c17dd0e6b3b60d73db30e"
+      sha256 "c5db0c684d989d58b5c541457554f13779d5aad2dffc3fcf057bddab79502652"
       define_method(:install) do
         bin.install "recliq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.1.0/recliq_0.1.0_linux_arm64.tar.gz"
-      sha256 "8c4e568d7fc7d9f7e5bd0ccf3887a3ce860d16bd558b1ad842b690fc30888131"
+      sha256 "41ccdcb182e456dd68ddba18d729cedcc2cf5e3f2aa27bec12acd1a404892cbd"
       define_method(:install) do
         bin.install "recliq"
       end
