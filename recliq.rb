@@ -5,21 +5,21 @@
 class Recliq < Formula
   desc "Recall shell commands using natural language"
   homepage "https://recliq.dev"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.3.0/recliq_0.3.0_darwin_amd64.tar.gz"
-      sha256 "60089f25f32527bf02b0b55cd10438d7c8bb8cd6a6183bb1a30a7451a59601ef"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.4.0/recliq_0.4.0_darwin_amd64.tar.gz"
+      sha256 "1ea7888d4a38be9022ff15e19f0e662030924bdaf5a3e6402f59aee704126131"
 
       define_method(:install) do
         bin.install "recliq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.3.0/recliq_0.3.0_darwin_arm64.tar.gz"
-      sha256 "62131b09ef49153c1709c3bedc043f195c65354cea9d63ef66ccb3eeef46cd42"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.4.0/recliq_0.4.0_darwin_arm64.tar.gz"
+      sha256 "dfb1e2e1225024a3d734106ed126cbdba8da5f6047245513ea775466ea5b034b"
 
       define_method(:install) do
         bin.install "recliq"
@@ -29,15 +29,15 @@ class Recliq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.3.0/recliq_0.3.0_linux_amd64.tar.gz"
-      sha256 "57336ff649a8d89b9a1f837e78071b619631f38f209c9e98f1232ec916200bb2"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.4.0/recliq_0.4.0_linux_amd64.tar.gz"
+      sha256 "c0c42b74a35698786545ae6a0a9488cc4c734cf8571fa9440a20172f8cdcf734"
       define_method(:install) do
         bin.install "recliq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.3.0/recliq_0.3.0_linux_arm64.tar.gz"
-      sha256 "5bc990a2a1100d62dc36b751e4cf873e721b5916579731767ab0a4182c2e913a"
+      url "https://pub-cf65b388d51b406b82f97a63b2164b2a.r2.dev/0.4.0/recliq_0.4.0_linux_arm64.tar.gz"
+      sha256 "0b0d4013831871f35ccb0dc812e9b4d9955878fb73156e00539e5ca4849abfbe"
       define_method(:install) do
         bin.install "recliq"
       end
